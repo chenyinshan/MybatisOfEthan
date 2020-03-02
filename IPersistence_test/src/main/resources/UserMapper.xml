@@ -1,0 +1,16 @@
+<mapper namespace="com.ethan.dao.IUserDao">
+
+    <insert id="insertOne" paramterType="com.ethan.pojo.User">
+        insert into user(id,username) values (#{id},#{username})
+    </insert>
+
+    <update id="updateOne" paramterType="com.ethan.pojo.User">
+        update user set username = #{username} where id=#{id}
+    </update>
+
+    <delete id="deleteOne" paramterType="com.ethan.pojo.User">
+        delete from user where id=#{id}
+    </delete>
+
+
+</mapper>

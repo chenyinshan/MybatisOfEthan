@@ -1,0 +1,10 @@
+<configuration>
+    <dataSource>
+        <property name="driverClass" value="com.mysql.cj.jdbc.Driver"></property>
+        <property name="jdbcUrl"
+                  value="jdbc:mysql://localhost:3306/zdy_mybatis?useSSL=false&amp;serverTimezone=UTC"></property>
+        <property name="username" value="root"></property>
+        <property name="password" value="root"></property>
+    </dataSource>
+    <mapper resource="UserMapper.xml"></mapper>
+</configuration>
